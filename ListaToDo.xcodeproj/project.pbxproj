@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		DF1D74891D95458E00EED70B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1D74881D95458E00EED70B /* AppDelegate.swift */; };
-		DF1D748B1D95458E00EED70B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1D748A1D95458E00EED70B /* ViewController.swift */; };
+		DF1D748B1D95458E00EED70B /* ActivitatiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1D748A1D95458E00EED70B /* ActivitatiViewController.swift */; };
 		DF1D748E1D95458E00EED70B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1D748C1D95458E00EED70B /* Main.storyboard */; };
 		DF1D74911D95458E00EED70B /* ListaToDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF1D748F1D95458E00EED70B /* ListaToDo.xcdatamodeld */; };
 		DF1D74931D95458E00EED70B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF1D74921D95458E00EED70B /* Assets.xcassets */; };
 		DF1D74961D95458E00EED70B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1D74941D95458E00EED70B /* LaunchScreen.storyboard */; };
+		DF1D749E1D95526000EED70B /* task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1D749D1D95526000EED70B /* task.swift */; };
+		DF36E58D1DAA28F90048A026 /* ActivitateCompletaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF36E58C1DAA28F90048A026 /* ActivitateCompletaViewController.swift */; };
+		DFEE19901DA41A2600987027 /* CreazaActivitateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEE198F1DA41A2600987027 /* CreazaActivitateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DF1D74851D95458E00EED70B /* ListaToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListaToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF1D74881D95458E00EED70B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DF1D748A1D95458E00EED70B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF1D748A1D95458E00EED70B /* ActivitatiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitatiViewController.swift; sourceTree = "<group>"; };
 		DF1D748D1D95458E00EED70B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF1D74901D95458E00EED70B /* ListaToDo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ListaToDo.xcdatamodel; sourceTree = "<group>"; };
 		DF1D74921D95458E00EED70B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF1D74951D95458E00EED70B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF1D74971D95458E00EED70B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF1D749D1D95526000EED70B /* task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = task.swift; sourceTree = "<group>"; };
+		DF36E58C1DAA28F90048A026 /* ActivitateCompletaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitateCompletaViewController.swift; sourceTree = "<group>"; };
+		DFEE198F1DA41A2600987027 /* CreazaActivitateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreazaActivitateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				DF1D74881D95458E00EED70B /* AppDelegate.swift */,
-				DF1D748A1D95458E00EED70B /* ViewController.swift */,
+				DF1D748A1D95458E00EED70B /* ActivitatiViewController.swift */,
+				DFEE198F1DA41A2600987027 /* CreazaActivitateViewController.swift */,
+				DF36E58C1DAA28F90048A026 /* ActivitateCompletaViewController.swift */,
+				DF1D749D1D95526000EED70B /* task.swift */,
 				DF1D748C1D95458E00EED70B /* Main.storyboard */,
 				DF1D74921D95458E00EED70B /* Assets.xcassets */,
 				DF1D74941D95458E00EED70B /* LaunchScreen.storyboard */,
@@ -99,6 +108,7 @@
 				TargetAttributes = {
 					DF1D74841D95458E00EED70B = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 45A92XCUK6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -139,7 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF1D748B1D95458E00EED70B /* ViewController.swift in Sources */,
+				DF1D749E1D95526000EED70B /* task.swift in Sources */,
+				DF36E58D1DAA28F90048A026 /* ActivitateCompletaViewController.swift in Sources */,
+				DFEE19901DA41A2600987027 /* CreazaActivitateViewController.swift in Sources */,
+				DF1D748B1D95458E00EED70B /* ActivitatiViewController.swift in Sources */,
 				DF1D74911D95458E00EED70B /* ListaToDo.xcdatamodeld in Sources */,
 				DF1D74891D95458E00EED70B /* AppDelegate.swift in Sources */,
 			);
@@ -264,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 45A92XCUK6;
 				INFOPLIST_FILE = ListaToDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ro.p-shop.ListaToDo";
@@ -276,6 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 45A92XCUK6;
 				INFOPLIST_FILE = ListaToDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ro.p-shop.ListaToDo";
@@ -303,6 +318,7 @@
 				DF1D749C1D95458E00EED70B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
