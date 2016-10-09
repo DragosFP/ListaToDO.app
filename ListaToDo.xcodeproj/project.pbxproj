@@ -13,7 +13,6 @@
 		DF1D74911D95458E00EED70B /* ListaToDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF1D748F1D95458E00EED70B /* ListaToDo.xcdatamodeld */; };
 		DF1D74931D95458E00EED70B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF1D74921D95458E00EED70B /* Assets.xcassets */; };
 		DF1D74961D95458E00EED70B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1D74941D95458E00EED70B /* LaunchScreen.storyboard */; };
-		DF1D749E1D95526000EED70B /* task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1D749D1D95526000EED70B /* task.swift */; };
 		DF36E58D1DAA28F90048A026 /* ActivitateCompletaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF36E58C1DAA28F90048A026 /* ActivitateCompletaViewController.swift */; };
 		DFEE19901DA41A2600987027 /* CreazaActivitateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEE198F1DA41A2600987027 /* CreazaActivitateViewController.swift */; };
 /* End PBXBuildFile section */
@@ -27,7 +26,6 @@
 		DF1D74921D95458E00EED70B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF1D74951D95458E00EED70B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF1D74971D95458E00EED70B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF1D749D1D95526000EED70B /* task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = task.swift; sourceTree = "<group>"; };
 		DF36E58C1DAA28F90048A026 /* ActivitateCompletaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitateCompletaViewController.swift; sourceTree = "<group>"; };
 		DFEE198F1DA41A2600987027 /* CreazaActivitateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreazaActivitateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,7 +64,6 @@
 				DF1D748A1D95458E00EED70B /* ActivitatiViewController.swift */,
 				DFEE198F1DA41A2600987027 /* CreazaActivitateViewController.swift */,
 				DF36E58C1DAA28F90048A026 /* ActivitateCompletaViewController.swift */,
-				DF1D749D1D95526000EED70B /* task.swift */,
 				DF1D748C1D95458E00EED70B /* Main.storyboard */,
 				DF1D74921D95458E00EED70B /* Assets.xcassets */,
 				DF1D74941D95458E00EED70B /* LaunchScreen.storyboard */,
@@ -149,7 +146,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF1D749E1D95526000EED70B /* task.swift in Sources */,
 				DF36E58D1DAA28F90048A026 /* ActivitateCompletaViewController.swift in Sources */,
 				DFEE19901DA41A2600987027 /* CreazaActivitateViewController.swift in Sources */,
 				DF1D748B1D95458E00EED70B /* ActivitatiViewController.swift in Sources */,

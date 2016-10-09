@@ -20,11 +20,17 @@ class ActivitatiViewController: UIViewController, UITableViewDataSource, UITable
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        tascuri = makeTasks()
+    //    tascuri = makeTasks()
         
         tableView.dataSource = self
         tableView.delegate = self
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        scoateTask()
+        tableView.reloadData()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tascuri.count
         
@@ -33,9 +39,9 @@ class ActivitatiViewController: UIViewController, UITableViewDataSource, UITable
         let cell = UITableViewCell()
         let task = tascuri [indexPath.row]
         if task.important {
-            cell.textLabel?.text = "‼️ \(task.name)"
+            cell.textLabel?.text = "‼️ \(task.name!)"
         } else {
-            cell.textLabel?.text = task.name
+            cell.textLabel?.text = task.name!
         }
         
         return cell
@@ -47,7 +53,7 @@ class ActivitatiViewController: UIViewController, UITableViewDataSource, UITable
         performSegue(withIdentifier: "selecteazaActivitatiSegue", sender: task)
     }
     
-    func makeTasks() -> [Task] {
+   /* func makeTasks() -> [Task] {
         let task1 = Task()
         task1.name = "Da-i blana"
         task1.important = true
@@ -60,21 +66,31 @@ class ActivitatiViewController: UIViewController, UITableViewDataSource, UITable
         task3.name = "Mananca"
         task3.important = true
         return[task1, task2, task3]
-    }
+    } */
+    
     @IBAction func butonApasat(_ sender: AnyObject) {
         performSegue(withIdentifier: "addSegue", sender: nil)
     }
     
+    func scoateTask() {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        do {tascuri = try context.fetch(Task.fetchRequest()) as! [Task]
+        } catch{
+            print("Panica...EROARE")
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "addSegue"{
+  /*      if segue.identifier == "addSegue"{
             let urmatorulVC = segue.destination as! CreazaActivitateViewController
             urmatorulVC.anteriorVC = self
         }
-        
+ */
         if segue.identifier == "selecteazaActivitatiSegue" {
             let urmatorulVC = segue.destination as! ActivitateCompletaViewController
-            urmatorulVC.task = sender as! Task
-            urmatorulVC.anteriorVC = self
+            urmatorulVC.task = sender as? Task
+          //  urmatorulVC.anteriorVC = self
         }
     }
     
